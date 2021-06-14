@@ -72,7 +72,6 @@ function newList() {
     }
   });
 }
-newList();
 
 function newListKeyup() {
   const text = document.querySelector('#texto-tarefa');
@@ -87,7 +86,6 @@ function newListKeyup() {
     }
   });
 }
-newListKeyup();
 /* cria um evento de double click, adiciona ou remove a classe completed */
 function scratchTask() {
   document.addEventListener('dblclick', (event) => {
@@ -100,7 +98,6 @@ function scratchTask() {
     }
   }, false);
 }
-scratchTask();
 /* cria um evento de click para deletar a lista completa */
 function deleteList() {
   const button = document.querySelector('#apaga-tudo');
@@ -108,7 +105,6 @@ function deleteList() {
     toDoList.replaceChildren();
   });
 }
-deleteList();
 /* cria um evento de click para deletar todas as tarefas finalizadas */
 function removeFinished() {
   const button = document.querySelector('#remover-finalizados');
@@ -121,7 +117,6 @@ function removeFinished() {
     }
   });
 }
-removeFinished();
 /* cira um evento de click para salvar a lista de tarefa no local store */
 function saveTheList() {
   const button = document.querySelector('#salvar-tarefas');
@@ -134,7 +129,6 @@ function saveTheList() {
     }
   });
 }
-saveTheList();
 /* retorna a lista salva quando o navegador e aberto */
 function returnList() {
   const storage = localStorage.length / 2;
@@ -146,7 +140,6 @@ function returnList() {
   }
   changeColor();
 }
-returnList();
 /* movimenta o item selecionado pra cima */
 function moveUp() {
   const selected = document.querySelector('.selected');
@@ -174,7 +167,6 @@ function eventMoveUp() {
     }
   });
 }
-eventMoveUp();
 /* movimenta o item selecionado para baixo */
 function moveDown() {
   const selected = document.querySelector('.selected');
@@ -202,7 +194,6 @@ function eventMoveDown() {
     }
   });
 }
-eventMoveDown();
 /* adiciona style aos botões */
 function styleNewList() {
   const button = document.querySelector('#criar-tarefa');
@@ -212,10 +203,9 @@ function styleNewList() {
   newSpans.style.fontSize = fontSizeButton;
   newSpans.style.marginRight = '5px';
   newSpans.style.paddingTop = '1px';
-
+  
   button.appendChild(newSpans);
 }
-styleNewList();
 
 function styleMoveUp() {
   const button = document.querySelector('#mover-cima');
@@ -225,7 +215,6 @@ function styleMoveUp() {
   newSpans.style.fontSize = fontSizeButton;
   button.appendChild(newSpans);
 }
-styleMoveUp();
 
 function styleMoveDown() {
   const button = document.querySelector('#mover-baixo');
@@ -235,7 +224,6 @@ function styleMoveDown() {
   newSpans.style.fontSize = fontSizeButton;
   button.appendChild(newSpans);
 }
-styleMoveDown();
 
 function styleSave() {
   const button = document.querySelector('#salvar-tarefas');
@@ -246,7 +234,6 @@ function styleSave() {
   newSpans.style.marginLeft = '3px';
   button.appendChild(newSpans);
 }
-styleSave();
 
 function styleRemoveDone() {
   const button = document.querySelector('#remover-finalizados');
@@ -256,7 +243,6 @@ function styleRemoveDone() {
   newSpans.style.fontSize = fontSizeButton;
   button.appendChild(newSpans);
 }
-styleRemoveDone();
 
 function styleDeleteAll() {
   const button = document.querySelector('#apaga-tudo');
@@ -266,4 +252,21 @@ function styleDeleteAll() {
   newSpans.style.fontSize = fontSizeButton;
   button.appendChild(newSpans);
 }
-styleDeleteAll();
+
+window.onload = () => {
+  newList();
+  newListKeyup();
+  scratchTask();
+  deleteList();
+  removeFinished();
+  saveTheList();
+  returnList();
+  eventMoveUp();
+  eventMoveDown();
+  styleNewList();
+  styleMoveUp();
+  styleMoveDown();
+  styleSave();
+  styleRemoveDone();
+  styleDeleteAll();
+}
