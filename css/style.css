@@ -1,0 +1,169 @@
+/* sass --watch scss/style.scss:css/style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-size: 62.5%;
+}
+
+.header {
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #7c5e99;
+  border-bottom: 1vh solid black;
+}
+.header h1 {
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-family: "Press Start 2P";
+  text-shadow: 5px 5px 0px black;
+}
+.header .header_navbar_menu {
+  display: block;
+  list-style: none;
+  position: absolute;
+  top: 10vh;
+  gap: 0.5rem;
+  background: #7c5e99;
+  left: 100vw;
+  width: 60vw;
+  transition: all 0.5s ease;
+  box-shadow: 5px 5px 0px black;
+  z-index: 1;
+}
+.header .header_navbar_menu a {
+  color: white;
+  font-family: "Fira Code";
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  padding: 1rem;
+  margin: 1rem 0.5rem;
+  background: #f25a70;
+  box-shadow: 5px 5px 0px black;
+}
+.header .header_navbar.toggle .header_navbar_menu {
+  left: 40vw;
+}
+.header .header_navbar.toggle .header_btn_hamburger {
+  border-top-color: transparent;
+}
+.header .header_navbar.toggle .header_btn_hamburger::after {
+  transform: rotate(135deg);
+  top: -7px;
+}
+.header .header_navbar.toggle .header_btn_hamburger::before {
+  transform: rotate(-135deg);
+}
+.header .header_btn {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.header .header_btn_hamburger {
+  border-top: 2px solid;
+  width: 20px;
+  color: white;
+}
+.header .header_btn_hamburger::after, .header .header_btn_hamburger::before {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 20px;
+  background: currentColor;
+  margin-top: 5px;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+@media (min-width: 500px) {
+  body {
+    background: red;
+  }
+
+  .header .header_navbar_menu {
+    width: 40vw;
+  }
+  .header .header_navbar.toggle .header_navbar_menu {
+    left: 60vw;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+    background: #3cff00;
+  }
+
+  .header {
+    overflow: hidden;
+  }
+  .header .header_navbar {
+    padding: 0.5rem 1rem;
+  }
+  .header .header_navbar .header_btn {
+    position: absolute;
+    left: 100vw;
+  }
+  .header .header_navbar_menu {
+    display: flex;
+    position: inherit;
+    top: 0;
+    width: inherit;
+    box-shadow: initial;
+    z-index: 1;
+  }
+  .header .header_navbar_menu li:nth-child(1) {
+    background: #f25a70;
+    box-shadow: 5px 5px 0px black;
+    order: 1;
+  }
+  .header .header_navbar_menu a {
+    color: white;
+    font-family: "Fira Code";
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.5rem 1.2rem;
+    margin: inherit;
+    background-color: initial;
+    box-shadow: initial;
+    white-space: nowrap;
+  }
+  .header .header_navbar_menu .menu_animated:hover {
+    background: #f25a70 url("/images/pixel.svg");
+    background-size: 100%;
+    box-shadow: 5px 5px 0px black;
+    transition-delay: 0.5s;
+    animation: animate1 0.7s steps(8) forwards;
+  }
+  @keyframes animate1 {
+    0% {
+      background-position-y: 0;
+    }
+    100% {
+      background-position-y: -480px;
+    }
+  }
+  .header .header_btn_hamburger {
+    border-top: initial;
+    width: initial;
+    display: none;
+    color: white;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
