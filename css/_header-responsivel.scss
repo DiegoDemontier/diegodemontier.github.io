@@ -1,5 +1,5 @@
 @media (max-width: 1180px) {
-  header {
+  .container-header {
     nav {
       button {
         display: flex;
@@ -59,7 +59,7 @@
         width: 40vw;
         background: $base-color-second;
         transition: all 0.5s ease;
-        box-shadow: -5px 5px 0px $black-color-first;
+        box-shadow: $shadow-first;
         li {
           a,
           button {
@@ -72,7 +72,7 @@
             padding: 1rem;
             margin: 1rem 0 1rem 1rem;
             background: $base-color-first;
-            box-shadow: -5px 5px 0px $black-color-first;
+            box-shadow: $shadow-first;
           }
           button {
             padding-right: calc(40vw - 198.4px);
@@ -84,7 +84,7 @@
 }
 
 @media (max-width: 600px) {
-  header {
+  .container-header {
     nav {
       button {
         display: flex;

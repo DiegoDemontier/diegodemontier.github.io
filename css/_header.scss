@@ -1,4 +1,4 @@
-header {
+.container-header {
   align-items: center;
   background-color: $base-color-second;
   border-bottom: 1vh solid $black-color-first;
@@ -7,10 +7,11 @@ header {
   justify-content: space-between;
   h1 {
     color: $base-color-third;
+    font-size: 1.5rem;
     padding: 0.5rem 1rem;
     font-weight: 500;
     font-family: $font-family-second;
-    text-shadow: -5px 5px 0px $black-color-first;
+    text-shadow: $shadow-first;
   }
   nav {
     padding: 0.5rem 1rem;
@@ -29,7 +30,7 @@ header {
           &:hover {
             background: $base-color-first url("/images/pixel.svg");
             background-size: 100%;
-            box-shadow: -5px 5px 0px $black-color-first;
+            box-shadow: $shadow-first;
             transition-delay: 0.5s;
             animation: animate1 0.7s steps(16) forwards;
           }
@@ -55,7 +56,7 @@ header {
           color: $base-color-third;
           font-family: $font-family-first;
           background: $base-color-first;
-          box-shadow: -5px 5px 0px $black-color-first;
+          box-shadow: $shadow-first;
           font-size: 1.2rem;
           font-weight: 500;
           padding: 0.5rem 1rem;

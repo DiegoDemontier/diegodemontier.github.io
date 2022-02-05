@@ -1,0 +1,20 @@
+section {
+  display: inline-block;
+  background: $black-color-second;
+  box-shadow: $shadow-second;
+  text-align: center;
+  padding: 42px 44px;
+  h2 {
+    color: $base-color-first;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    font-family: $font-family-second;
+    text-shadow: $shadow-first;
+  }
+  h3 {
+    color: $base-color-third;
+    font-size: 1.5rem;
+    text-shadow: $shadow-first;
+  }
+}

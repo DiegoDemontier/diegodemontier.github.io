@@ -13,7 +13,7 @@ body {
   font-size: 62.5%;
 }
 
-header {
+.container-header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -28,23 +28,24 @@ header {
           justify-content: space-between;
 }
 
-header h1 {
+.container-header h1 {
   color: white;
+  font-size: 1.5rem;
   padding: 0.5rem 1rem;
   font-weight: 500;
   font-family: "Press Start 2P";
   text-shadow: -5px 5px 0px black;
 }
 
-header nav {
+.container-header nav {
   padding: 0.5rem 1rem;
 }
 
-header nav > button {
+.container-header nav > button {
   display: none;
 }
 
-header nav ul {
+.container-header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +59,7 @@ header nav ul {
   z-index: 1;
 }
 
-header nav ul li .animated:hover {
+.container-header nav ul li .animated:hover {
   background: #f25a70 url("/images/pixel.svg");
   background-size: 100%;
   -webkit-box-shadow: -5px 5px 0px black;
@@ -69,7 +70,7 @@ header nav ul li .animated:hover {
           animation: animate1 0.7s steps(16) forwards;
 }
 
-header nav ul li a {
+.container-header nav ul li a {
   color: white;
   font-family: "Fira Code";
   font-size: 1.2rem;
@@ -97,7 +98,7 @@ header nav ul li a {
   }
 }
 
-header nav ul li button {
+.container-header nav ul li button {
   color: white;
   font-family: "Fira Code";
   background: #f25a70;
@@ -111,7 +112,7 @@ header nav ul li button {
 }
 
 @media (max-width: 1180px) {
-  header nav button {
+  .container-header nav button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -121,12 +122,12 @@ header nav ul li button {
     background: none;
     cursor: pointer;
   }
-  header nav button span {
+  .container-header nav button span {
     border-top: 2px solid;
     width: 20px;
     color: white;
   }
-  header nav button span::after, header nav button span::before {
+  .container-header nav button span::after, .container-header nav button span::before {
     content: "";
     display: block;
     height: 2px;
@@ -137,22 +138,22 @@ header nav ul li button {
     transition: all 0.5s ease;
     position: relative;
   }
-  header nav.toggle ul {
+  .container-header nav.toggle ul {
     left: 60vw;
   }
-  header nav.toggle span {
+  .container-header nav.toggle span {
     border-top-color: transparent;
   }
-  header nav.toggle span::after {
+  .container-header nav.toggle span::after {
     -webkit-transform: rotate(135deg);
             transform: rotate(135deg);
     top: -7px;
   }
-  header nav.toggle span::before {
+  .container-header nav.toggle span::before {
     -webkit-transform: rotate(-135deg);
             transform: rotate(-135deg);
   }
-  header nav ul {
+  .container-header nav ul {
     display: block;
     position: absolute;
     top: 9vh;
@@ -165,8 +166,8 @@ header nav ul li button {
     -webkit-box-shadow: -5px 5px 0px black;
             box-shadow: -5px 5px 0px black;
   }
-  header nav ul li a,
-  header nav ul li button {
+  .container-header nav ul li a,
+  .container-header nav ul li button {
     display: block;
     font-family: "Fira Code";
     font-size: 1.2rem;
@@ -179,13 +180,13 @@ header nav ul li button {
     -webkit-box-shadow: -5px 5px 0px black;
             box-shadow: -5px 5px 0px black;
   }
-  header nav ul li button {
+  .container-header nav ul li button {
     padding-right: calc(40vw - 198.4px);
   }
 }
 
 @media (max-width: 600px) {
-  header nav button {
+  .container-header nav button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -195,12 +196,12 @@ header nav ul li button {
     background: none;
     cursor: pointer;
   }
-  header nav button span {
+  .container-header nav button span {
     border-top: 2px solid;
     width: 20px;
     color: white;
   }
-  header nav button span::after, header nav button span::before {
+  .container-header nav button span::after, .container-header nav button span::before {
     content: "";
     display: block;
     height: 2px;
@@ -211,15 +212,39 @@ header nav ul li button {
     transition: all 0.5s ease;
     position: relative;
   }
-  header nav.toggle ul {
+  .container-header nav.toggle ul {
     left: 50vw;
   }
-  header nav ul {
+  .container-header nav ul {
     left: 102vw;
     width: 50vw;
   }
-  header nav ul li button {
+  .container-header nav ul li button {
     padding-right: calc(50vw - 198.4px);
   }
+}
+
+section {
+  display: inline-block;
+  background: #3a4042;
+  -webkit-box-shadow: -10px 10px 0px black;
+          box-shadow: -10px 10px 0px black;
+  text-align: center;
+  padding: 42px 44px;
+}
+
+section h2 {
+  color: #f25a70;
+  font-weight: 400;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  font-family: "Press Start 2P";
+  text-shadow: -5px 5px 0px black;
+}
+
+section h3 {
+  color: white;
+  font-size: 1.5rem;
+  text-shadow: -5px 5px 0px black;
 }
 /*# sourceMappingURL=style.css.map */
