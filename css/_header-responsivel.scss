@@ -56,27 +56,23 @@
         position: absolute;
         right: 0px;
         width: 0px;
-        top: 9vh;
+        top: 69px;
         position: absolute;
         background: $base-color-second;
         transition: all 0.5s ease;
         box-shadow: $shadow-first;
         li {
-          a,
-          button {
-            display: block;
+          a {
             font-family: $font-family-first;
+            box-shadow: $shadow-first;
+            background: $base-color-first;
+            display: block;
             font-size: 1.2rem;
             font-weight: 500;
             text-decoration: none;
             padding: 10px;
             padding: 1rem;
             margin: 1rem 0 1rem 1rem;
-            background: $base-color-first;
-            box-shadow: $shadow-first;
-          }
-          button {
-            padding-right: 40vw;
           }
         }
       }

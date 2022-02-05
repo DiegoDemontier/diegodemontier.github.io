@@ -1,9 +1,9 @@
 .container-header {
   align-items: center;
   background-color: $base-color-second;
-  border-bottom: 1vh solid $black-color-first;
+  border-bottom: 10px solid $black-color-first;
   display: flex;
-  height: 10vh;
+  height: 80px;
   justify-content: space-between;
   h1 {
     color: $base-color-third;
@@ -15,7 +15,7 @@
   }
   nav {
     padding: 0.5rem 1rem;
-    > button {
+    button {
       display: none;
     }
     ul {
@@ -29,10 +29,18 @@
         .animated {
           &:hover {
             background: $base-color-first url("/images/pixel.svg");
-            background-size: 100%;
             box-shadow: $shadow-first;
+            background-size: 100%;
             transition-delay: 0.5s;
             animation: animate1 0.7s steps(16) forwards;
+            @keyframes animate1 {
+              0% {
+                background-position-y: 0;
+              }
+              100% {
+                background-position-y: -480px;
+              }
+            }
           }
         }
         a {
@@ -40,28 +48,14 @@
           font-family: $font-family-first;
           font-size: 1.2rem;
           font-weight: 500;
+          padding: 10px 1rem;
+          white-space: nowrap;
+          border: 0;
           text-decoration: none;
-          padding: 0.5rem 1rem;
-          margin: 1rem 0.5rem;
-          @keyframes animate1 {
-            0% {
-              background-position-y: 0;
-            }
-            100% {
-              background-position-y: -480px;
-            }
-          }
         }
-        button {
-          color: $base-color-third;
-          font-family: $font-family-first;
+        .button {
           background: $base-color-first;
           box-shadow: $shadow-first;
-          font-size: 1.2rem;
-          font-weight: 500;
-          padding: 0.5rem 1rem;
-          white-space: nowrap;
-          cursor: pointer;
         }
       }
     }

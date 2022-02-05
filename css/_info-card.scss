@@ -1,20 +1,55 @@
-section {
-  display: inline-block;
-  background: $black-color-second;
-  box-shadow: $shadow-second;
-  text-align: center;
-  padding: 42px 44px;
-  h2 {
-    color: $base-color-first;
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    font-family: $font-family-second;
-    text-shadow: $shadow-first;
-  }
-  h3 {
-    color: $base-color-third;
-    font-size: 1.5rem;
-    text-shadow: $shadow-first;
+.container-card {
+  height: 700px;
+  background-image: url(../images/img1.svg);
+  background-size: 800px 120%;
+  background-color: rgb(152,151,149);
+  background-position: 50vw;
+  background-repeat: no-repeat;
+  border-bottom: 10px solid $black-color-first;
+  div {
+    display: flex;
+    flex-direction: column;
+    width: 655px;
+    div:first-child {
+      background: $black-color-second;
+      display: inline-block;
+      box-shadow: $shadow-second;
+      text-align: center;
+      padding: 50px 30px;
+      margin-left: 8vw;
+      margin-top: 150px;
+      h2 {
+        color: $base-color-first;
+        font-size: 1.2rem;
+        padding: 0.5rem 1rem;
+        font-family: $font-family-second;
+        text-shadow: $shadow-first;
+      }
+      h3 {
+        color: $base-color-third;
+        font-size: 1.2rem;
+        text-shadow: $shadow-first;
+      }
+    }
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      margin-left: 8vw;
+      margin-top: 30px;
+      a {
+        text-align: center;
+        width: 200px;
+        color: $base-color-third;
+        font-family: $font-family-first;
+        background: $base-color-first;
+        box-shadow: $shadow-first;
+        font-size: 1.2rem;
+        font-weight: 500;
+        padding: 10px 1rem;
+        border: 0;
+        text-decoration: none;
+      }
+    }
   }
 }
