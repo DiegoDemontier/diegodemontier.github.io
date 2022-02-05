@@ -1,0 +1,24 @@
+$base-color-first: rgba(242, 90, 112, 1);
+$base-color-second: rgba(124, 94, 153, 1);
+$base-color-third: rgba(255, 255, 255, 1);
+
+$black-color-first: rgba(0, 0, 0, 1);
+$black-color-second: rgba(58, 64, 66, 1);
+$black-color-third: rgba(130, 130, 130, 1);
+
+$font-family-first: "Fira Code";
+$font-family-second: "Press Start 2P";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  font-size: 62.5%;
+}
