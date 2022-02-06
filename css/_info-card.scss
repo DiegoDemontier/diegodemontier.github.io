@@ -1,8 +1,8 @@
 .container-card {
-  height: 700px;
+  height: 480px;
   background-image: url(../images/img1.svg);
   background-size: 800px 120%;
-  background-color: rgb(152,151,149);
+  background-color: rgb(152, 151, 149);
   background-position: 50vw;
   background-repeat: no-repeat;
   border-bottom: 10px solid $black-color-first;
@@ -16,8 +16,11 @@
       box-shadow: $shadow-second;
       text-align: center;
       padding: 50px 30px;
-      margin-left: 8vw;
-      margin-top: 150px;
+      margin-left: 12vw;
+      margin-top: 80px;
+      .h2-card-mobile {
+        display: none;
+      }
       h2 {
         color: $base-color-first;
         font-size: 1.2rem;
@@ -35,7 +38,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-around;
-      margin-left: 8vw;
+      margin-left: 12vw;
       margin-top: 30px;
       a {
         text-align: center;
