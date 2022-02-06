@@ -79,3 +79,15 @@
     }
   }
 }
+
+@media (max-width: 655px) {
+  .container-header {
+    justify-content: flex-end;
+    background-image: url(/images/img2.svg);
+    background-repeat: no-repeat;
+    background-size: 90px 110%;
+    > h1 {
+      display: none;
+    }
+  }
+}
