@@ -286,14 +286,11 @@ body {
 
 @media (max-width: 655px) {
   .container-card {
-    height: 200px;
+    height: auto;
     background-image: none;
   }
-  .container-card div {
-    height: 200px;
-  }
   .container-card div div:first-child {
-    margin-top: 10px;
+    height: 200px;
     width: 100vw;
     font-size: 1rem;
     padding: 0;
@@ -304,7 +301,9 @@ body {
   }
   .container-card div div:first-child .h2-card-mobile {
     display: block;
+    padding: 30px 10px;
     margin: 10px;
+    text-align: center;
   }
   .container-card div div:first-child h3 {
     margin: 10px;
