@@ -285,15 +285,15 @@ body {
 }
 
 @media (max-width: 655px) {
-  body {
-    background: blue;
-  }
   .container-card {
-    height: 0;
+    height: 200px;
     background-image: none;
   }
+  .container-card div {
+    height: 200px;
+  }
   .container-card div div:first-child {
-    margin-top: 0px;
+    margin-top: 10px;
     width: 100vw;
     font-size: 1rem;
     padding: 0;
@@ -310,9 +310,9 @@ body {
     margin: 10px;
   }
   .container-card div div {
-    margin-left: 0;
+    margin: 0;
     width: 100vw;
-    margin-top: 140px;
+    position: relative;
   }
   .container-card div div a {
     width: 50vw;
