@@ -1,9 +1,11 @@
 @media (max-width: 1180px) {
   .container-card {
+    height: 680px;
     display: flex;
     align-items: flex-end;
-    background-position: center;
-    background-size: 27rem;
+    background-position: center -40px;
+    background-size: 24rem;
+    
     div {
       div:first-child {
         margin-top: 0px;
@@ -11,10 +13,9 @@
         margin-left: 0;
       }
       div {
+        margin-top: 0px;
         margin-left: 0;
         width: 100vw;
-        margin-top: 200px;
-        position: absolute;
         a {
           width: 50vw;
           font-size: 1.2rem;
