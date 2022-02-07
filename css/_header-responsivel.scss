@@ -1,5 +1,8 @@
 @media (max-width: 1180px) {
   .container-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
     nav {
       button {
         display: flex;
