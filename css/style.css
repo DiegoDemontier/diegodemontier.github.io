@@ -30,6 +30,9 @@ html {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .container-header h1 {
