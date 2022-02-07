@@ -1,6 +1,5 @@
 @media (max-width: 1180px) {
   .container-header {
-    position: fixed;
     width: 100%;
     z-index: 1;
     nav {
@@ -56,7 +55,6 @@
       ul {
         overflow: hidden;
         display: block;
-        position: absolute;
         right: 0px;
         width: 0px;
         top: 69px;
