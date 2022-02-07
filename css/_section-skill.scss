@@ -1,0 +1,24 @@
+.container-skills {
+  text-align: center;
+  div {
+    display: flex;
+    div {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      img {
+        height: 70px;
+        width: 70px;
+      }
+      div {
+        progress {
+          border-radius: 0;
+          width: 370px;
+          height: 30px;
+        }
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
