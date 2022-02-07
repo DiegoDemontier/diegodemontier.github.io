@@ -346,6 +346,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #f25a70;
+  border-bottom: 10px solid black;
 }
 
 .container-skills h2 {
@@ -420,5 +421,32 @@ body {
 
 .container-skills .skills div div progress::-webkit-progress-value {
   background-color: #7c5e99;
+}
+
+@media (max-width: 1080px) {
+  .container-skills .skills {
+    width: 100%;
+  }
+  .container-skills .skills div {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 200px;
+    gap: 10px;
+  }
+  .container-skills .skills div img {
+    height: 60px;
+    width: 50px;
+  }
+  .container-skills .skills div div h3 {
+    font-size: 1rem;
+  }
+  .container-skills .skills div div progress {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   background: $base-color-first;
+  border-bottom: 10px solid $black-color-first;
   h2 {
     font-size: 1.2rem;
     font-family: $font-family-second;
