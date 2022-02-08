@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Diego</title>
 
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -62,8 +64,7 @@
     </div>
   </section>
 
-  <section class="container-skills">
-    <a name="skills"></a>
+  <section id="skills" class="container-skills">
     <h2>Skills</h2>
 
     <div class="skills">
@@ -152,7 +153,48 @@
   
   </section>
 
- <script src="./script.js"></script>
+  <section class="conteiner-slide">
+    <h2>Projetos</h2>
+    
+    <div class="swiper mySwiper1">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/images/img1.svg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/img1.svg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/img2.svg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/img2.svg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/img2.svg" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="/images/img1.svg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/img1.svg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="/images/img2.svg" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./script.js"></script>
 
 </body>
 </html>
