@@ -530,4 +530,68 @@ html {
     width: 20px;
   }
 }
+
+@media (max-width: 1080px) {
+  .conteiner-slide .mySwiper1 {
+    display: none;
+  }
+  .conteiner-slide .mySwiper2 {
+    display: block;
+    padding: 0.5rem .5rem;
+    width: 350px;
+    border-bottom: 10px solid black;
+  }
+  .conteiner-slide .mySwiper2 .swiper-wrapper .swiper-slide img {
+    height: 300px;
+    width: 300px;
+    -webkit-box-shadow: -10px 10px 0px white;
+            box-shadow: -10px 10px 0px white;
+  }
+  .conteiner-slide .mySwiper2 .swiper-pagination .swiper-pagination-bullet {
+    background-color: #7c5e99;
+    border-radius: 0;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+.container-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #7c5e99;
+}
+
+.container-about h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Press Start 2P";
+  padding: 3rem;
+  color: #fff;
+}
+
+.container-about div {
+  width: 80%;
+}
+
+.container-about div h3 {
+  font-size: 1.2rem;
+  font-family: "Fira Code";
+  padding: 0 3rem;
+  padding-bottom: 3rem;
+  color: #fff;
+}
+
+@media (max-width: 655px) {
+  .container-about div {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=style.css.map */

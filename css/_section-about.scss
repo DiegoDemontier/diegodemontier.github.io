@@ -1,0 +1,23 @@
+.container-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $base-color-second;
+  h2 {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: $font-family-second;
+    padding: 3rem;
+    color: #fff;
+  }
+  div {
+    width: 80%;
+    h3 {
+      font-size: 1.2rem;
+      font-family: $font-family-first;
+      padding: 0 3rem;
+      padding-bottom: 3rem;
+      color: #fff;
+    }
+  }
+}
