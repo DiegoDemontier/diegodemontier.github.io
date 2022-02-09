@@ -203,7 +203,11 @@
 
   <section class="container-contacts">
     <h2>Contatos</h2>
-    <form>
+    <form action="https://api.staticforms.xyz/submit" method="post">
+
+      <input type="hidden" name="redirectTo" value="https://diegodemontier.github.io/">
+      <input type="hidden" name="accessKey" value="bd1f5e46-0a29-496f-9cda-12826f556012">
+      
       <label for="name">Nome:</label>
       <input type="text" id="name" name="name">
 
