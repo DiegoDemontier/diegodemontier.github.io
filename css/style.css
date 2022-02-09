@@ -65,7 +65,7 @@ html {
 }
 
 .container-header nav ul li .animated:hover {
-  background: #f25a70 url("/images/pixel.svg");
+  background: #f25a70 url("/utils/pixel.svg");
   -webkit-box-shadow: -5px 5px 0px black;
           box-shadow: -5px 5px 0px black;
   background-size: 100%;
@@ -189,7 +189,7 @@ html {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    background-image: url(/images/img2.svg);
+    background-image: url(/utils/img2.svg);
     background-repeat: no-repeat;
     background-size: 90px 110%;
   }
@@ -200,7 +200,7 @@ html {
 
 .container-card {
   height: 480px;
-  background-image: url(../images/img2.svg);
+  background-image: url(../utils/img2.svg);
   background-size: 800px 120%;
   background-color: #989795;
   background-position: 50vw;
@@ -458,7 +458,7 @@ html {
   }
 }
 
-.conteiner-slide {
+.conteiner-projects {
   background: black;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -474,7 +474,7 @@ html {
   border-bottom: 10px solid #f25a70;
 }
 
-.conteiner-slide h2 {
+.conteiner-projects h2 {
   text-align: center;
   font-size: 1.2rem;
   font-family: "Press Start 2P";
@@ -482,25 +482,25 @@ html {
   color: #fff;
 }
 
-.conteiner-slide .mySwiper2 {
+.conteiner-projects .mySwiper2 {
   display: none;
 }
 
-.conteiner-slide .mySwiper1 {
+.conteiner-projects .mySwiper1 {
   background: black;
-  padding: 0.5rem .5rem;
+  padding: 0.5rem 0.5rem;
   width: 80%;
   border-bottom: 10px solid black;
 }
 
-.conteiner-slide .mySwiper1 .swiper-wrapper .swiper-slide img {
+.conteiner-projects .mySwiper1 .swiper-wrapper .swiper-slide img {
   height: 300px;
   width: 300px;
   -webkit-box-shadow: -10px 10px 0px white;
           box-shadow: -10px 10px 0px white;
 }
 
-.conteiner-slide .mySwiper1 .swiper-pagination .swiper-pagination-bullet {
+.conteiner-projects .mySwiper1 .swiper-pagination .swiper-pagination-bullet {
   background-color: #7c5e99;
   border-radius: 0;
   height: 20px;
@@ -508,46 +508,22 @@ html {
 }
 
 @media (max-width: 1080px) {
-  .conteiner-slide .mySwiper1 {
+  .conteiner-projects .mySwiper1 {
     display: none;
   }
-  .conteiner-slide .mySwiper2 {
+  .conteiner-projects .mySwiper2 {
     display: block;
-    padding: 0.5rem .5rem;
+    padding: 0.5rem 0.5rem;
     width: 350px;
     border-bottom: 10px solid black;
   }
-  .conteiner-slide .mySwiper2 .swiper-wrapper .swiper-slide img {
+  .conteiner-projects .mySwiper2 .swiper-wrapper .swiper-slide img {
     height: 300px;
     width: 300px;
     -webkit-box-shadow: -10px 10px 0px white;
             box-shadow: -10px 10px 0px white;
   }
-  .conteiner-slide .mySwiper2 .swiper-pagination .swiper-pagination-bullet {
-    background-color: #7c5e99;
-    border-radius: 0;
-    height: 20px;
-    width: 20px;
-  }
-}
-
-@media (max-width: 1080px) {
-  .conteiner-slide .mySwiper1 {
-    display: none;
-  }
-  .conteiner-slide .mySwiper2 {
-    display: block;
-    padding: 0.5rem .5rem;
-    width: 350px;
-    border-bottom: 10px solid black;
-  }
-  .conteiner-slide .mySwiper2 .swiper-wrapper .swiper-slide img {
-    height: 300px;
-    width: 300px;
-    -webkit-box-shadow: -10px 10px 0px white;
-            box-shadow: -10px 10px 0px white;
-  }
-  .conteiner-slide .mySwiper2 .swiper-pagination .swiper-pagination-bullet {
+  .conteiner-projects .mySwiper2 .swiper-pagination .swiper-pagination-bullet {
     background-color: #7c5e99;
     border-radius: 0;
     height: 20px;

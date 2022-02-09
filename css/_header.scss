@@ -28,7 +28,7 @@
       li {
         .animated {
           &:hover {
-            background: $base-color-first url("/images/pixel.svg");
+            background: $base-color-first url("/utils/pixel.svg");
             box-shadow: $shadow-first;
             background-size: 100%;
             transition-delay: 0.5s;
