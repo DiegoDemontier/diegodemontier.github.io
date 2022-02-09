@@ -12,9 +12,9 @@ const toggleMenu = () => {
 }
 
 button.addEventListener('click', toggleMenu)
-options[0].addEventListener('click', toggleMenu)
-options[1].addEventListener('click', toggleMenu)
-options[2].addEventListener('click', toggleMenu)
+options.forEach((option) => {
+  option.addEventListener('click', toggleMenu)
+})
 
 var swiper = new Swiper(".mySwiper1", {
   slidesPerView: 3,
