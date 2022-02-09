@@ -589,12 +589,6 @@ html {
   color: #fff;
 }
 
-@media (max-width: 655px) {
-  .container-about div {
-    width: 100%;
-  }
-}
-
 .container-contacts {
   background: #3a4042;
   display: -webkit-box;
