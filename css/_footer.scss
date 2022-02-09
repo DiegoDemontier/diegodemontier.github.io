@@ -1,0 +1,11 @@
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  height: 80px;
+  background: $black-color-first;
+  img {
+    height: 40px;
+  }
+}

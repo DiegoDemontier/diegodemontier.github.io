@@ -627,6 +627,7 @@ html {
   background: #f25a70;
   -webkit-box-shadow: -5px 5px 0px black;
           box-shadow: -5px 5px 0px black;
+  margin-bottom: 60px;
 }
 
 .container-contacts form textarea {
@@ -638,5 +639,24 @@ html {
   height: 20vw;
   resize: none;
   margin-bottom: 20px;
+}
+
+.container-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5vw;
+  height: 80px;
+  background: black;
+}
+
+.container-footer img {
+  height: 40px;
 }
 /*# sourceMappingURL=style.css.map */
