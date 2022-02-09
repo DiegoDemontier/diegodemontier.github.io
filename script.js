@@ -21,7 +21,7 @@ var swiper = new Swiper(".mySwiper1", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
-    delay: 2500,
+    delay: 5500,
     disableOnInteraction: false
   },
   pagination: {
@@ -36,7 +36,7 @@ var swiper = new Swiper(".mySwiper2", {
   spaceBetween: 30,
   centeredSlides: true,
   autoplay: {
-    delay: 2500,
+    delay: 5500,
     disableOnInteraction: false
   },
   pagination: {

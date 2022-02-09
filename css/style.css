@@ -489,7 +489,7 @@ html {
 .conteiner-slide .mySwiper1 {
   background: black;
   padding: 0.5rem .5rem;
-  width: 90%;
+  width: 80%;
   border-bottom: 10px solid black;
 }
 
@@ -567,6 +567,7 @@ html {
       -ms-flex-align: center;
           align-items: center;
   background: #7c5e99;
+  border-bottom: 10px solid black;
 }
 
 .container-about h2 {
@@ -578,13 +579,12 @@ html {
 }
 
 .container-about div {
-  width: 80%;
+  width: 80vw;
 }
 
 .container-about div h3 {
   font-size: 1.2rem;
   font-family: "Fira Code";
-  padding: 0 3rem;
   padding-bottom: 3rem;
   color: #fff;
 }
@@ -593,5 +593,80 @@ html {
   .container-about div {
     width: 100%;
   }
+}
+
+.container-contacts {
+  background: #3a4042;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-contacts h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Press Start 2P";
+  padding: 3rem;
+  color: #fff;
+}
+
+.container-contacts form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.container-contacts form label {
+  font-family: "Fira Code";
+  color: white;
+  font-size: 1.2rem;
+}
+
+.container-contacts form input {
+  padding-left: 10px;
+  font-size: 1.2rem;
+  border: 5px solid black;
+  width: 80vw;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.container-contacts form input:last-child {
+  border: 0;
+  padding-left: 0;
+  font-family: "Fira Code";
+  color: white;
+  font-size: 1.2rem;
+  background: #f25a70;
+  -webkit-box-shadow: -5px 5px 0px black;
+          box-shadow: -5px 5px 0px black;
+}
+
+.container-contacts form textarea {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 1.2rem;
+  border: 5px solid black;
+  width: 80vw;
+  height: 20vw;
+  resize: none;
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=style.css.map */
